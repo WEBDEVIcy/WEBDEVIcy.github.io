@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="HOME.css">
+    <link rel="stylesheet" href="CSS/HOME.CSS">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
 
     
  
@@ -17,14 +18,12 @@
 
     <div class="nav-bar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="HOME.HTML">Home</a></li>
+          <li><a href="PRODUCT.HTML">Product</a></li>
+          <li><a href="ABOUT.HTML">About Us</a></li>
         </ul>
       </div>
       
-
-
 
 
     
@@ -33,7 +32,7 @@
     <div class="intro">
      <h1>Coffee Love</h1>
      <p>Brew-tiful mornings start with coffee love.</p>
-     <button type="button">Explore</button>
+     <button class="bg-primary" type="button">Explore</button>
      <img src="image/machine.png">
 
 
@@ -61,7 +60,7 @@
       <!-- tittle with line -->
       <div class="separator-product">
         <div class="line"></div>
-        <h3>  Satisfy your sweet tooth with our irresistible pastries.  </h3>
+        <h3>  Our Best Seller Coffee  </h3>
         <div class="line"></div>
       </div>
     </div>
@@ -69,7 +68,7 @@
     <div class="Content-Product">
         
         <div class="Content-1">
-            <img src="image/Coffee-1.png" style="width:300px ; height:300px ;  margin-left: 10px; margin-top:40px;">
+            <img class="image-1" src="image/Coffee-1.png">
             <h1> Hot Chocolate </h1>
             <p>Steamed milk and mocha sauce topped with sweetened whipped cream and a chocolate-flavored drizzle. A timeless classic made to sweeten your spirits.</p>
             
@@ -77,16 +76,16 @@
         </div>
 
         <div class="Content-2">
-            <img src="image/Coffee-2.png">
-            <h1>Caramel Frappuccino</h1>
+            <img  class="image-2" src="image/Coffee-2.png">
+            <h1> Frappuccino</h1>
             <p>Buttery caramel syrup meets coffee, milk and ice for a rendezvous in the blender. Then whipped cream and caramel sauce layer the love on top.</p>
            
             
         </div>
 
         <div class="Content-3" >
-            <img src="image/Coffee-3.png" style="margin-top: -30px;">
-            <h1>Strawberry Pie Pure Matcha Latte</h1>
+            <img  class="image-3" src="image/Coffee-3.png" >
+            <h1>Matcha Latte</h1>
             <p>Our finest pure matcha latte topped with a light layer of pink strawberry pie cold foam and strawberry cookie crumbles for that strawberry pie flavor. </p>
             
             
@@ -94,6 +93,14 @@
 
 
     </div>
+
+          <!-- tittle with line -->
+          <div class="separator-slider">
+            <div class="line"></div>
+            <h3>  Our Place  </h3>
+            <div class="line"></div>
+          </div>
+        </div>
 
     <section id="slider">
         <input type="radio" name="slider" id="s1">
@@ -110,12 +117,49 @@
 
 
 
-     <footer>
-      <hr>
-     </footer>
+        <!-- footer -->
+      
+        <footer>
+          <div class="footer-wrapper">
+            <div class="logo">
+              <img src="image/logo.png" alt="Logo">
+               <h1>Coffee Love</h1>
+        
+            </div>
+            <div class="footer-links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="HOME.HTML">Home</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="social-media">
+              <h4>Follow Us</h4>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Logo" style="width: 30px; height: 30px;">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li style="margin-left: 15px;">
+                  <a href="https://twitter.com/">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png" alt="Twitter Logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+  
+          <h5 class="Content-copyright">© 2023 Coffee Love. All rights reserved.</h5>
+        </footer>
     
 
-  
-<script src="HOME.JS"></script>
+<script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+<script src="JAVASCRIPT/HOME.JS"></script>
     </body>
     </html>

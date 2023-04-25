@@ -6,38 +6,34 @@
   background-position: left -80px top 50px, right bottom, left -100px bottom -300px; /* Set the position of each bean image */
 }
 
+.nav-bar {
+  position: relative; /* Add this line for relative positioning */
+  z-index: 1; /* Add this line to set the stacking order */
+  margin-left: 70%;
+  margin-top: 50px;
+}
 
-  .nav-bar {
-    padding: 25px;
-    position: absolute;
-    right: 0;
-  }
-  
-  .nav-bar ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-bar li {
-    display: inline;
-    margin-left: 10px;
-  }
-  
-  .nav-bar a {
-    text-decoration: none;
-    color: #F7E1BC;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .nav-bar ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 5px 10px;
-    border-radius: 30px;
-    /* Add any other desired styles for the links on hover */
-  }
-  
-  
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+  display: wrap;
+}
 
+.nav-bar li {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #F7E1BC;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar ul li a:hover {
+  color: white;
+}
 
 
   .intro h1
@@ -59,22 +55,21 @@
 
   .intro button {
     padding: 20px 100px;
-    margin-left: 230px;
-    margin-top: 50px;
-    border-radius: 25px;
-    color: white;
-    border: 1px solid #000000; /* Specify the border color here */
-    background-color: transparent;
-    box-shadow: 1px 2px 3px rgb(0, 0, 0);
-    transition: transform 0.3s ease;
-    font-size: 15px;
+  margin-left: 230px;
+  margin-top: 15px;
+  border-radius: 25px; 
+  border: none;
+    box-shadow: 1px 2px 5px black;
+  transition: transform 0.3s ease;
+  font-size: 15px ;
+  color:white;
   }
   
 
   .intro button:hover{
 
-    transform: scale(1.2);
-    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+
     
 
 
@@ -83,7 +78,7 @@
   .intro img{
     position: absolute;
     width: 60%;
-    top: 35px ;
+    top: 40px ;
     right: 0;
     height: 95%;
 
@@ -92,9 +87,9 @@
   }
 
 .logo{
-
-  margin: 20px;
-  width: 70px;
+  margin-top: -50px;
+  margin-left: 10px;
+  width: 75px;
   height: 70px;
 }
 
@@ -113,7 +108,7 @@
  color:#F8E4BE;
  font-family: 'Courier New', Courier, monospace;
  margin-left: 600px;
- margin-top: -95px;
+ margin-top: -100px;
  font-size: 90px;
  text-shadow: 1px 5px 5px black;
  font-weight: bold;
@@ -125,6 +120,7 @@
   font-family: 'Times New Roman', Times, serif;
   margin-left: 500px;
   font-size: 20px;
+  margin-top:25px;
 
 }
 
@@ -133,20 +129,18 @@
   margin-left: 700px;
   margin-top: 15px;
   border-radius: 25px; 
-  color:white;
-  background-color: transparent;
   box-shadow: 1px 2px 3px black;
   transition: transform 0.3s ease;
   font-size: 15px ;
-  border: 1px solid #000000;
+
 
 
 
 }
 .Content-Story button:hover{
 
-  transform: scale(1.2);
-  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+
   
 
 
@@ -188,7 +182,7 @@
 
 .Content-Product {
   display: flex;
-  margin-left: 100px;
+  margin-left: 130px;
   margin-top: 50px;
 }
 
@@ -197,8 +191,8 @@
 .Content-Product .Content-3 {
   position: relative; /* Add relative positioning for the pseudo-element */
   background-color: #54372B;
-  width: 320px;
-  height: 500px;
+  width: 350px;
+  height: 510px;
   padding: 10px 20px;
   box-shadow: 2px 3px 5px black;
   border-radius: 35px;
@@ -215,11 +209,25 @@
 .Content-Product .Content-2 {
   margin-top: 20px;
 }
+.Content-Product .image-1{
+  width:300px ; 
+  height:300px ;
+  margin-left: 5px; 
+  margin-top:40px;
+}
 
-.Content-Product img {
+.Content-Product .image-2{
+  width: 350px;
+  height: 350px;
+  margin-left: -20px;
+  margin-top: -30px;
+}
+
+.Content-Product .image-3{
   width: 350px;
   height: 350px;
   margin-left: -10px;
+  margin-top: -10px;
 }
 
 .Content-Product h1 {
@@ -248,8 +256,27 @@
   border-radius: 5px;
 }
 
+/*slider*/
+.separator-slider{
+  display: flex;
+  align-items: center;
+  margin-top: 300px;
+}
 
+.separator-slider h3{
+  padding: 0 1rem; 
+}
 
+.separator-slider .line{
+  flex: 1;
+  height: 4px;
+  background-color: #a0583c;
+}
+
+.separator-slider h3{
+
+  color: #c58c70;
+}
 
 [type=radio] {
   display: none;
@@ -260,7 +287,7 @@
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 #slider label {
@@ -369,3 +396,96 @@
 
 
 
+/* footer */
+
+
+footer {
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 300px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: -50px;
+  margin-top: 90px;
+}
+
+.logo h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 50px;
+  margin-top: 90px;
+
+}
+.footer-links h4 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+margin-top: 10px;
+}
+.footer-links li:hover {
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-media h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.social-media li {
+  margin-right: 15px;
+}
+
+.social-media ul li:hover img,
+.social-media ul li:hover i {
+  transform: scale(1.2); /* increase the scale to make the icons bigger */
+}
+
+
+.Content-copyright {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #ffffff;
+}
