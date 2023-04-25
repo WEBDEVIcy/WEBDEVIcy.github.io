@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Footer container */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            color: #fff; /* Text color */
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999; /* Ensure footer is on top of other content */
+        }
+
+        /* Line at the top of footer */
+        .footer::before {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #fff; /* Line color */
+            opacity: 0.5; /* Line opacity */
+            margin-bottom: 10px; /* Spacing between line and footer content */
+        }
+
+        /* Footer content */
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Social media icons */
+        .footer-social-media {
+            display: flex;
+        }
+
+        /* Footer text */
+        .footer-text {
+            font-size: 14px;
+        }
+
+        /* Animated coffee cup image */
+        @keyframes sip-coffee {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* AI girl sipping coffee image */
+        .ai-girl {
+            animation: sip-coffee 1s infinite;
+            max-width: 50px; /* Set maximum width for the image */
+        }
+
+        .footer-social-media img {
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: -35px;
+    margin-right: -35px; /* Add margin-right for gap between images */
+
+}
+
+.footer-social-media{
+margin-left: 200px;
+
+}
+
+
+        .Media p{
+
+          margin-left:50px ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Footer container -->
+    <div class="footer">
+        <!-- Footer content -->
+        <div class="footer-content">
+            <!-- Social media icons -->
+            <div class="footer-social-media">
+              <!-- Logo -->
+            <img src="https://example.com/logo.png" alt="Logo">
+            <!-- Coffee love text -->
+            <div class="footer-text">Coffee love</div>
+            <div class="Media">
+                <p>Follow US:</p>
+            </div>
+                <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Social Media Icon 1">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png"style="border-radius: 50%" alt="Social Media Icon 2">
+            </div>
+            
+            <!-- Terms and conditions link -->
+            <a href="#" class="footer-text">Terms and Conditions</a>
+            <!-- Home link -->
+            <a href="#" class="footer-text">Home</a>
+            <!-- Product link -->
+            <a href="#" class="footer-text">Product</a>
+            <!-- Service link -->
+            <a href="#" class="footer-text">Service</a>
+            <!-- FAQ link -->
+            <a href="#" class="footer-text">FAQ</a>
+            <!-- AI girl sipping coffee image -->
+            <img src="https://example.com/ai-girl.png" alt="AI Girl Sipping Coffee" class="ai-girl">
+        </div>
+    </div>
+</body>
+
+</html>
