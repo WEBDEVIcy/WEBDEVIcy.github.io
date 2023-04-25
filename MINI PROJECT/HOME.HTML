@@ -47,7 +47,7 @@
         <h1>Our Story</h1>
         <p>Welcome to Coffee Love, where our passion for coffee is brewed into every cup! Our journey began with a simple love for the rich, aromatic flavors of coffee that awaken the senses and warm the soul. Inspired by this love, we embarked on a mission to create a haven for coffee enthusiasts, where they could indulge in the art and science of coffee-making.</p>
         <p>With unwavering dedication, we carefully source the finest coffee beans from around the world, meticulously roast them to perfection, and expertly brew them using a variety of methods to bring out their unique flavors. Our skilled baristas, trained in the craft of coffee, pour their heart and soul into every cup they create, ensuring that each sip is a sensory delight.</p>
-        <button>Read More</button>
+        <button class="btn btn-primary">Read More</button>
   
     </div>
     <div>
@@ -56,10 +56,20 @@
 </div>
 
 
+
+
+      <!-- tittle with line -->
+      <div class="separator-product">
+        <div class="line"></div>
+        <h3>  Satisfy your sweet tooth with our irresistible pastries.  </h3>
+        <div class="line"></div>
+      </div>
+    </div>
+
     <div class="Content-Product">
         
         <div class="Content-1">
-            <img src="image/Coffee-1.png">
+            <img src="image/Coffee-1.png" style="width:300px ; height:300px ;  margin-left: 10px; margin-top:40px;">
             <h1> Hot Chocolate </h1>
             <p>Steamed milk and mocha sauce topped with sweetened whipped cream and a chocolate-flavored drizzle. A timeless classic made to sweeten your spirits.</p>
             
@@ -74,8 +84,8 @@
             
         </div>
 
-        <div class="Content-3">
-            <img src="image/Coffee-3.png">
+        <div class="Content-3" >
+            <img src="image/Coffee-3.png" style="margin-top: -30px;">
             <h1>Strawberry Pie Pure Matcha Latte</h1>
             <p>Our finest pure matcha latte topped with a light layer of pink strawberry pie cold foam and strawberry cookie crumbles for that strawberry pie flavor. </p>
             
@@ -106,32 +116,6 @@
     
 
   
-      <script>
-        var slideIndex = 1; // Start with the first slide
-        var interval = 3000; // Interval in milliseconds for automatic slide transition
-    
-        // Function to transition to the next slide
-        function nextSlide() {
-          slideIndex++;
-          if (slideIndex > 5) {
-            slideIndex = 1; // Reset to the first slide after the last slide
-          }
-          document.getElementById('s' + slideIndex).checked = true;
-        }
-    
-        // Start the automatic slide show
-        var slideInterval = setInterval(nextSlide, interval);
-    
-        // Stop the automatic slide show on hover
-        var slider = document.getElementById('slider');
-        slider.addEventListener('mouseover', function() {
-          clearInterval(slideInterval);
-        });
-    
-        // Resume the automatic slide show on mouseout
-        slider.addEventListener('mouseout', function() {
-          slideInterval = setInterval(nextSlide, interval);
-        });
-      </script>
+<script src="HOME.JS"></script>
     </body>
     </html>
