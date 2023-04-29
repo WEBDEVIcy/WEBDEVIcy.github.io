@@ -1,0 +1,366 @@
+/* background image */
+.bg-home {
+    background: #fffada;
+    background-image: url('../img/bg-image.jpg');
+    background-size: cover;
+
+    height: 579px;
+
+    background-repeat: no-repeat;
+    padding: 0;
+    margin:0 ;
+  }
+
+
+
+  
+  /* navbar */
+  .nav {
+    margin-left: 100px;
+    margin-top: -70px;
+    overflow: hidden;
+    
+
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+ .nav li {
+    float: left;
+  }
+ 
+  
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow:1px 1px 5px black;
+
+  }
+  
+  .nav li a:hover {
+    color: black;
+    text-decoration: underline;
+
+  }
+  
+
+  /* image logo */
+  
+  .logo{
+   width: 100px;
+   height: auto;
+   margin-top: 30px;
+  
+
+  }
+
+ 
+
+
+
+  .intro{
+margin-left:-25px
+
+  }
+
+  .intro h1
+  {
+
+ color: white;
+ margin-top: 90px;
+ margin-left:50px;
+ font-size: 130px;
+ font-family: 'Times New Roman', Times, serif;
+ text-shadow: 1px 2px 5px red;
+
+
+  }
+  .intro p{
+    color: white;
+    margin-left:205px;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px black;
+
+  }
+
+  .intro button {
+    padding: 20px 100px;
+  margin-left: 230px;
+  margin-top: 15px;
+  border-radius: 25px; 
+  border: none;
+    box-shadow: 1px 2px 5px black;
+  transition: transform 0.3s ease;
+  font-size: 15px ;
+  color:white;
+  }
+  
+
+  .intro button:hover{
+
+    transform: scale(1.1);
+
+    
+
+
+  }
+
+ /*about us*/
+ .about h4{
+color: #8d351f;
+
+ }
+
+.about h4,
+.about h1{
+  text-align: center;
+  justify-content: center;
+}
+
+.content-about .content{
+  margin-top: 80px;
+}
+
+
+ /* about us end */
+
+
+  /* service end */
+
+  .service h4{
+    color: #8d351f;
+    
+     }
+    
+    .service h4,
+    .service h1{
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .content-service .content{
+      margin-top: 80px;
+    }
+
+    /* service end */
+
+ /* menu  */
+
+ .content-menu .Menu{
+  margin-top: -200px;
+ }
+
+ .menu h4{
+  color: #8d351f;
+  
+   }
+  
+  .menu h4,
+  .menu h1{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .content-menu .content{
+    margin-top: 80px;
+  }
+
+
+  /* menu end */
+
+
+  /* Reservation  */
+  .Content-Reservation .container
+{
+
+  margin-top: 80px;
+}
+  /* Reservation end */
+
+
+  /* Review  */
+
+  .Content-Review .container{
+    margin-top: -200px;
+  }
+  .Review h4{
+    color: #8d351f;
+    
+     }
+    
+    .Review h4,
+    .Review h1{
+      text-align: center;
+      justify-content: center;
+    }
+
+  /* Review end */
+
+
+
+
+.py-5{
+    margin-top: 300px;
+}
+
+.cup{
+    margin-top: -360px;
+
+}
+
+.pt-5{
+    margin-top: -300px;
+}
+
+
+
+
+.pt-5 .container .row{
+    margin-left: -5px;
+}
+
+.Menu{
+
+    margin-top: 300px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+/*reviews image*/
+  .image-1,
+  .image-2,
+  .image-3{
+
+    width: 120px;
+    height: 120px;
+  }
+  /*reviews*/
+/* Media query for tablet view with a minimum width of 720px */
+@media screen and (min-width: 720px) and (max-width: 1289px) {
+    /* Add a background image to .bg-home with a fixed height and width */
+  /* background image */
+  .bg-home {
+    background-image: url('../img/bg-image2.jpg');
+  
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin:0 ;
+  }
+  
+    /* Adjust the logo size and margin */
+    .logo {
+      width: 80px;
+      height: auto;
+      margin-top: 30px;
+    }
+  
+   
+    .intro {
+      margin-left: 95px;
+    }
+  
+    
+    .intro h1 {
+      font-size: 80px;
+    }
+    .intro p {
+      margin-left: 100px;
+      font-size: 15px;
+    }
+    .intro button {
+      padding: 20px 80px;
+      margin-left: 140px;
+     }
+  
+.cup{
+display:none
+}
+
+
+.vision{
+    margin-top: -700px;
+}
+    
+  }
+
+    /* Media query for mobile view with a minimum width of 375px */
+    @media screen and (min-width: 375px) and (max-width: 719px){
+
+
+     /* background image */
+.bg-home {
+  background-image: url('../img/bg-image2.jpg');
+
+  height: 650px;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin:0 ;
+}
+      .content-menu .Menu{
+       margin-top: 100px;
+      }
+
+        .logo {
+            width: 60px;
+            height: auto;
+            margin-top: 30px;
+            margin-left: 20px;
+          }
+
+          .intro h1 {
+            font-size: 70px;
+            margin-left: 80px;
+
+          }
+          .intro p {
+
+            margin-left: 130px;
+            font-size: 15px;
+          }
+
+
+          .intro button {
+           padding: 10px 50px;
+           margin-left: 190px;
+          }
+        .vision{
+            margin-top: -380px;
+        }
+
+        .Service{
+            margin-top: 200px;
+        }
+
+        .Menu{
+            margin-top: 30px;
+        }
+        
+   
+        .nav li a {
+         font-size: 15px;
+         text-align: center;
+         justify-content: center;
+      
+        }
+   
+    }
+  
+  
+ 
